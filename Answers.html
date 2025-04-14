@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Elements and Forms</title>
+  <style>
+    /* Add some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Ordered list with roman numerals -->
+  <h2>Ordered List</h2>
+  <ol type="I">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    
+  </ol>
+  <!-- External image from pexels.com -->
+  <h2>Image</h2>
+  <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg" alt="pexels image" width="400">
+  <!-- Table of contacts -->
+  <h2>Contacts</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Mobile</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>John Mala</td>
+      <td>123 lulu St</td>
+      <td>0764567890</td>
+      <td>johnmala@mj.com</td>
+    </tr>
+    <tr>
+      <td>Jane Koloko</td>
+      <td>456 eve St</td>
+      <td>0836543210</td>
+      <td>janekoloko@kj.com</td>
+    </tr>
+    
+    <tr>
+      <td>Bob zulu</td>
+      <td>789 Oak St</td>
+      <td>0821234567</td>
+      <td>bobzulu@b.com</td>
+    </tr>
+    <tr>
+      <td>Alice Brown</td>
+      <td>321 Maole St</td>
+      <td>0782345678</td>
+      <td>alicebrown@ab.com</td>
+    </tr>
+    <tr>
+      <td>Mike Davis</td>
+      <td>901 mandela St</td>
+      <td>0822423333</td>
+      <td>mikdavis@m.com</td>
+    </tr>
+  </table>
+  <!-- Registration form -->
+  <h2>Registration Form</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required placeholder="Enter your password"><br><br>
+    
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+    <!-- Dropdown -->
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">Select a country</option>
+      <option value="south Afica">south Afica</option>
+      <option value="Canada">Canada</option>
+      <option value="Nigeria">Nigeria</option>
+    </select><br><br>
+    <!-- Radio buttons -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    <!-- Checkboxes -->
+    <label>Interests:</label>
+    <input type="checkbox" id="reading" name="interests" value="reading">
+    <label for="reading">Reading</label>
+    <input type="checkbox" id="hiking" name="interests" value="hiking">
+    <label for="hiking">Hiking</label>
+    <input type="checkbox" id="coding" name="interests" value="coding">
+    <label for="coding">Coding</label><br><br>
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
